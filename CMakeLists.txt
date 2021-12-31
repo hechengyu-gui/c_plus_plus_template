@@ -32,7 +32,7 @@ include_directories( ${OpenCV_INCLUDE_DIRS} )
 #---------------------------------------------------------------------
 #               [ bin ] ==> [ demo ]
 #---------------------------------------------------------------------
-
+add_subdirectory(${PROJECT_SOURCE_DIR}/demo/basic_c++)
 #---------------------------------------------------------------------
 #               [ bin ] ==> [ test ]
 #---------------------------------------------------------------------
@@ -44,9 +44,9 @@ include_directories( ${OpenCV_INCLUDE_DIRS} )
 #---------------------------------------------------------------------
 #        [ Install -->  ] ==> [  ]
 #---------------------------------------------------------------------
-message("Install Prefix : [${CMAKE_INSTALL_PREFIX}]")
+# message("Install Prefix : [${CMAKE_INSTALL_PREFIX}]")
 
-install(TARGETS ${PROJECT_NAME} 
-        RUNTIME DESTINATION ${CMAKE_INSTALL_PREFIX}
-        LIBRARY DESTINATION ${CMAKE_INSTALL_PREFIX}
-        ARCHIVE DESTINATION ${CMAKE_INSTALL_PREFIX})
+# install(TARGETS ${PROJECT_NAME} 
+#         RUNTIME DESTINATION ${CMAKE_INSTALL_PREFIX}
+#         LIBRARY DESTINATION ${CMAKE_INSTALL_PREFIX}
+#         ARCHIVE DESTINATION ${CMAKE_INSTALL_PREFIX})
